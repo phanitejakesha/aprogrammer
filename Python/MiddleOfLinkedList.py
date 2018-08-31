@@ -10,8 +10,9 @@
 
 class Solution(object):
     def middleNode(self, head):
-        ptr1 = head #pointer which moves two nodes
-        ptr2 = head #pointer which moves one node
+        ptr1 = ptr2 =  head
+        #ptr1 pointer which moves two nodes
+        #ptr2 pointer which moves one node
         while ptr1 and ptr1.next:
             ptr2 = ptr2.next
             ptr1 = ptr1.next.next
